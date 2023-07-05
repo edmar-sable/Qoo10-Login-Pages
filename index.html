@@ -1,19 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <div class="header">
       <div class="logo-head">
-        <img src="./img/logo_qoo10_main.png" class="logo">
+        <img src="./img/logo_qoo10_main.png" class="logo" />
         <p>Qoo10 - Smart Shopping Paradise !</p>
       </div>
-      <p>English / PHP</p>
+      <select class="selp">
+        <option>/ English / PHP</option>
+      </select>
     </div>
     <div class="column-top">
       <div class="topnav">
@@ -26,32 +28,105 @@
         </div>
       </div>
     </div>
-    <div>
-      <div>
-        
+    <div class="column-mid">
+      <div class="midnav">
+        <div>
+          <a href="#">Email / Sign-in</a>
+          <a href="#">Phone Sign-in</a>
+          <a href="#">Register</a>
+        </div>
+      </div>
+    </div>
+    <div class="center-content">
+      <div class="login-left">
+        <form class="form">
+          <label for="email" class="email">Email or ID</label>
+          <input type="text" id="email" name="email" class="input" />
+          <label for="password" class="password">Password</label>
+          <input type="text" id="password" name="password" class="input" />
+          <div class="security">
+            <label for="email">Security</label>
+            <img src="./img/logo_qoo10_main.png" class="sec-logo" />
+            <img src="./img/recycle.png" class="recycle" />
+            <input
+              type="text"
+              id="security"
+              name="security"
+              class="input sec-input"
+              placeholder="code in the image"
+            />
+          </div>
+          <button type="submit" class="signinBtn">Sign In</button>
+          <div class="cb">
+            <input type="checkbox" class="input-cb" />
+            <label> Keep me signed in on this computer </label>
+            <img src="./img/question.png" class="question" />
+          </div>
+          <a href="#" class="new-register">New Register</a><label> >></label>
+          <div class="link-btn">
+            <a href="#" class="link-btn link">Find email or ID</a>
+            <a href="#" class="link-btn link">Find Password </a>
+            <a href="#">Guide for Problems</a>
+          </div>
+        </form>
+        <span class="seperation">OR</span>
+      </div>
+      <div class="login-right">
+        <p>Sign in with your account below.</p>
+        <img src="./img/facebook.png" class="facebook" />
+        <img src="./img/google.png" class="google" />
+        <img src="./img/line.png" class="line" />
+        <img src="./img/kakao-talk.png" class="kakao-talk" />
+        <img src="./img/apple.png" class="apple" />
+      </div>
+    </div>
+    <div class="footer">
+      <div><p>Specially for Qoo10 Members</p></div>
+    </div>
+    <div class="footer-nav">
+      <div class="lastBorderLeft">
+        <label class="footer-label">EVERY DAY AT QOO10</label><br />
+        <button>
+          <div class="lastbtn">
+            <div><img src="./img/shamrock.png" class="clover" /></div>
+            <div>Lucky Auction</div>
+          </div>
+        </button>
+        <button>
+          <div class="lastbtn">
+            <div><img src="./img/clock.png" class="clock" /></div>
+            <div>Today's Sale</div>
+          </div>
+        </button>
+        <button>
+          <div class="lastbtn">
+            <div><img src="./img/star.png" class="star" /></div>
+            <div>Best Seller</div>
+          </div>
+        </button>
       </div>
       <div>
-        
+        <label class="footer-label">Shopping Tips & Benefits</label>
+        <br />
+        <button style="background-color: #759dfd; color: #fff">
+          <div class="btn-left">
+            <div>QPRIME Shop Fastest Delivery</div>
+            <div><img src="./img/diamond.png" class="diamond" /></div>
+          </div>
+        </button>
+        <button style="background-color: #759dfd; color: #fff">
+          <div class="btn-left">
+            <div>Everyday Enjoy your Q-Lounge</div>
+            <div><img src="./img/diamond.png" class="diamond" /></div>
+          </div>
+        </button>
+        <button style="background-color: #759dfd; color: #fff">
+          <div class="btn-left">
+            <div>Q·Specials Recommended for you</div>
+            <div><img src="./img/like.png" class="like" /></div>
+          </div>
+        </button>
       </div>
     </div>
-
-
-
-
-
-    <div class="topnav-column">
-      <a href="#email">Email/ID Sign-in</a>
-      <a href="#phone">Phone Sign-in</a>
-      <a href="#guest" >Guest</a>
-    </div>
-    <div class="row">
-      <div class="column">
-        <p>Email or ID</p><input></input>
-        <p>Password</p><input></input>
-        <p>Security</p><input></input>
-        <input></input>
-        <a href="#sign-in">Sign In</a>
-      </div>
-    </div>
-</body>
+  </body>
 </html>
